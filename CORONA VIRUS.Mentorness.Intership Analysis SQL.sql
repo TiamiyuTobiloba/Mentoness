@@ -13,6 +13,17 @@ WHERE 'ALL COLUMNS' IS NULL;
 -- Anwer: We have 0 null values, which means we do not have any missing values..
 
 -- Q2. If NULL values are present, update them with zeros for all columns. 
+UPDATE corona_data.`corona virus dataset`
+SET
+Province = COALESCE(Province, 0),
+`Country/Region` = COALESCE(`Country/Region`, 0),
+Latitude = COALESCE(`Latitude`, 0),
+Longitude = COALESCE(`Longitude`, 0),
+Date = COALESCE(`Date`, 0),
+Confirmed = COALESCE(Confirmed, 0),
+Deaths = COALESCE(Deaths, 0),
+Recovered = COALESCE(Recovered, 0);
+
 -- Anwer : Because no null values were present, we do not need to update any of the columns.
 
 -- Q3. check total number of rows
