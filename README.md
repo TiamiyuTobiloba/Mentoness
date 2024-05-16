@@ -1,2 +1,1 @@
-# Mentoness
-Mentoness Intership Tasks
+I worked on the following projects during my remote internship with Mentoness: "Table-Valued Function," "Covid 19 dataset using SQL," and "Hotel Aggregator Dataset using Power Bi." I also gave a comprehensive power point presentation outlining my analysis of the covid 19 and hotel aggregator projects.
